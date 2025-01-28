@@ -1,0 +1,17 @@
+/* styles.css */
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    color: darkblue;
+  }
+  
+  h1 {
+    text-align: center;
+    color: crimson;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
