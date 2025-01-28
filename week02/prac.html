@@ -3,11 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Webpage</title> 
-  <link rel="stylesheet" href="style.css">
+  <title>Student Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #007BFF;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    table th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+      background-color: #e9ecef;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a simple webpage with connected CSS.</p>
+
+  <div class="container">
+    <h1>Student Details</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll Number</th>
+          <th>Department</th>
+          <th>Passing Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>101</td>
+          <td>Computer Science</td>
+          <td>2025</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>102</td>
+          <td>Mechanical</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>Mike Johnson</td>
+          <td>103</td>
+          <td>Electrical</td>
+          <td>2023</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </body>
 </html>
