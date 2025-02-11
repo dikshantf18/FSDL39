@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <button onclick="showSection('todo')">To-Do List</button>
+        <button onclick="showSection('ageCalculator')">Age Calculator</button>
+        <button onclick="showSection('passwordChecker')">Password Checker</button>
+        <button onclick="showSection('clickGame')">Click Me Game</button>
+        <button onclick="showSection('tempConverter')">Temperature Converter</button>
+    </div>
+
+    <div id="todo" class="section">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="Add a new task" class="input-box">
+        <button onclick="addTask()" class="btn">Add Task</button>
+        <ul id="todo-list" class="task-list"></ul>
+    </div>
+
+    <div id="ageCalculator" class="section">
+        <h2>Age Calculator</h2>
+        <input type="date" id="birth-date" class="input-box">
+        <button onclick="calculateAge()" class="btn">Calculate Age</button>
+        <p id="age-result" class="result"></p>
+    </div>
+
+    <div id="passwordChecker" class="section">
+        <h2>Password Checker</h2>
+        <input type="password" id="password" placeholder="Enter password" class="input-box">
+        <button onclick="checkPassword()" class="btn">Check Password</button>
+        <p id="password-result" class="result"></p>
+    </div>
+
+    <div id="clickGame" class="section">
+        <h2>Click Me Button Game</h2>
+        <button onclick="increaseScore()" class="btn">Click Me!</button>
+        <p id="score" class="result">Score: 0</p>
+    </div>
+
+    <div id="tempConverter" class="section">
+        <h2>Temperature Converter</h2>
+        <input type="number" id="temp-input" placeholder="Enter temperature" class="input-box">
+        <select id="unit" class="input-box">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <button onclick="convertTemperature()" class="btn">Convert</button>
+        <p id="conversion-result" class="result"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

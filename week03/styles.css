@@ -1,0 +1,45 @@
+body {
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #007bff;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+.container h2 {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+}
+.table {
+    background-color: white;
+}
+.table thead {
+    background-color: #007bff;
+    color: white;
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+#news ul li {
+    background: #e9ecef;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+#market {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.candlestick-chart {
+    display: none;
+    margin-top: 20px;
+}
