@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Map App</title>
+    <link rel="stylesheet" href="styles1.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather and Map Information</h1>
+        </header>
+        <main>
+            <div id="map-container">
+                <div id="map"></div> <!-- Add this div for the map -->
+            </div>
+            <div id="weather-info">
+                <h2>Weather Information</h2>
+                <div id="weather-animation"></div>
+                <div id="weather-details" class="hidden">
+                    <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+                    <p><strong>Condition:</strong> <span id="condition"></span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
