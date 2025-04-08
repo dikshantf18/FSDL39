@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Display on Button Click</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 70%;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Text and Display It</h1>
+        <input type="text" id="userInput" placeholder="Type something here...">
+        <br>
+        <button onclick="displayText()">Display Text</button>
+        <p id="outputText"></p>
+    </div>
+
+    <script>
+        function displayText() {
+            // Get the value from the input field
+            const input = document.getElementById('userInput').value;
+            
+            // Set the innerHTML of the paragraph to the input value
+            document.getElementById('outputText').innerHTML = input;
+        }
+    </script>
+</body>
+</html>

@@ -3,34 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather and Map App</title>
+    <title>India Weather Map</title>
     <link rel="stylesheet" href="styles1.css">
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Weather and Map Information</h1>
-        </header>
-        <main>
-            <div id="map-container">
-                <div id="map"></div> <!-- Add this div for the map -->
-            </div>
-            <div id="weather-info">
-                <h2>Weather Information</h2>
-                <div id="weather-animation"></div>
-                <div id="weather-details" class="hidden">
-                    <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
-                    <p><strong>Condition:</strong> <span id="condition"></span></p>
-                </div>
-            </div>
-        </main>
+        <h1>India Weather Map</h1>
+        <div class="map-container">
+            <img src="india-map.png" alt="Map of India" usemap="#india-map" class="india-map">
+            <map name="india-map">
+                <area shape="poly" coords="220,220,250,240,230,270,200,230" href="#" alt="Maharashtra" onclick="showWeather('Maharashtra')">
+                <area shape="poly" coords="160,180,180,210,140,230,110,190" href="#" alt="Gujarat" onclick="showWeather('Gujarat')">
+                <area shape="poly" coords="300,160,330,180,310,210,280,170" href="#" alt="Madhya Pradesh" onclick="showWeather('Madhya Pradesh')">
+                <!-- Add more <area> elements for other states -->
+            </map>
+        </div>
+
+        <div id="weather-info">
+            <h2>Click on a state to see the weather</h2>
+            <p id="weather-details">Weather details will appear here.</p>
+        </div>
     </div>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script1.js"></script>
 </body>
 </html>
